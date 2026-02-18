@@ -73,11 +73,31 @@ Below, for each industry, domains and modules are listed. Full module detail (sc
 
 
 ### FinTech Super App
-- **User & KYC** — User lifecycle, KYC verification, Limits & tiers
-- **Transactions** — Payment monitoring, Disputes, Reversals & refunds
-- **Financial Controls** — Limits & rules, Partner settlement, Liquidity view
-- **Product & Offers** — Campaigns, Product config, Merchant/partner onboarding
-- **Risk & Compliance** — Fraud alerts, SAR/AML workflow, Reporting
+#### Domain 1: User & Identity
+- User lifecycle
+- KYC & verification
+- Roles & permissions
+
+#### Domain 2: Transactions & Flow
+- Payment processing
+- Reversals & refunds
+- Transaction monitoring
+
+#### Domain 3: Financial Controls
+- Limits & tiers
+- Fee logic
+- Balance visibility
+
+#### Domain 4: Risk & Compliance
+- AML monitoring
+- Fraud alerts
+- Audit trail
+
+#### Domain 5: Operations & System
+- Admin controls
+- Incident handling
+- Configuration
+
 
 ### CEX Exchange
 - **User & Verification** — User list, KYC/AML review, Limits & tiers
