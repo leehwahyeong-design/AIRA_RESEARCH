@@ -1,4 +1,18 @@
 # Admin / Operations Console Reference Model — Structural Pattern Extraction
+## Structural Declaration (LOCK v1.0)
+
+This document defines a cross-industry Admin / Operations Console structural extraction model.
+
+Constraints:
+
+1. No execute-level authority in primary admin screens.
+2. All critical operations must flow through request/approval workflows.
+3. Object-level audit trail is mandatory.
+4. Domain separation must be visible in UI hierarchy.
+5. Read / Request / Attach action model is fixed.
+
+This model is descriptive, not product-specific.
+
 
 **Scope:** Publicly known structures of admin and operations consoles only. No internal architecture, implementation details, or company-specific secrets. Structure only—no product design or proprietary assumptions.
 
@@ -31,11 +45,32 @@
 Below, for each industry, domains and modules are listed. Full module detail (screens, objects, actions) follows in section 3.
 
 ### BigTech Platform
-- **User & Account** — Account lifecycle, Profile & preferences, Abuse & appeals
-- **Access & Identity** — SSO & federation, Roles & permissions, Security events
-- **Billing & Monetization** — Subscriptions, Usage & metering, Invoicing & payouts
-- **Content & Policy** — Moderation queue, Policy rules, Appeals
-- **Operational Health** — Service status, Incidents, Capacity & quotas
+
+#### Domain 1: User & Identity
+- Account lifecycle
+- Access & Identity
+- Roles & permissions
+
+#### Domain 2: Transactions & Flow
+- Subscriptions
+- Usage metering
+- Invoicing & payouts
+
+#### Domain 3: Financial Controls
+- Limits & tiers
+- Fee logic
+- Balance visibility
+
+#### Domain 4: Risk & Compliance
+- Abuse & appeals
+- Security events
+- Audit trail
+
+#### Domain 5: Operations & System
+- Admin controls
+- Incident handling
+- Configuration
+
 
 ### FinTech Super App
 - **User & KYC** — User lifecycle, KYC verification, Limits & tiers
